@@ -1,4 +1,6 @@
-/* Reset Styles */
+/* =======================
+   Global Reset & Styles
+======================= */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,9 @@ body, html {
     color: #2C3E50;
 }
 
-/* Navbar Styling */
+/* =======================
+   Navbar Styles
+======================= */
 nav {
     background-color: #2C3E50; /* Dark Blue */
     color: white;
@@ -40,9 +44,9 @@ nav {
     transition: 0.3s ease-in-out;
 }
 
-/* Unicons Icon */
+/* Settings Icon */
 .setting i {
-    font-size: 1.5rem;  /* Adjust icon size */
+    font-size: 1.5rem;  
     color: white;
 }
 
@@ -51,7 +55,9 @@ nav {
     background-color: #E76F51;
 }
 
-/* Main Content */
+/* =======================
+   Main Content (index.html)
+======================= */
 main {
     height: 80vh;
     display: flex;
@@ -59,7 +65,7 @@ main {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 /* Paragraph */
@@ -106,7 +112,112 @@ main p {
     transform: scale(1.07);
 }
 
-/* Responsive Design */
+a{
+    text-decoration: none;
+}
+/* =======================
+   Chapters & Topics Pages
+======================= */
+main h2 {
+    font-size: 2rem;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+/* List Items (Chapters & Topics) */
+.chapters-list,
+.topics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.chapter,
+.topic {
+    background: #2E8B57;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+.chapter:hover,
+.topic:hover {
+    background: #1E6F43;
+    transform: scale(1.05);
+}
+
+/* =======================
+   Search Bar (topics.html only)
+======================= */
+.search-bar {
+    position: relative;
+    width: 60%;
+    max-width: 500px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1.2rem;
+    border: 2px solid #2E8B57; /* Green */
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Search Input Focus */
+.search-bar input:focus {
+    border-color: #1E6F43;
+    box-shadow: 0 0 8px rgba(46, 139, 87, 0.5);
+}
+
+/* Search Icon */
+.search-bar i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #2E8B57;
+}
+
+/* =======================
+   Back Button
+======================= */
+.back-btn {
+    margin-top: 30px;
+}
+
+.back-btn a {
+    background: #FF8C42;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Back Button Hover */
+.back-btn a:hover {
+    background: #E76F51;
+    transform: scale(1.05);
+}
+
+/* =======================
+   Responsive Design
+======================= */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -122,5 +233,20 @@ main p {
         width: 95%;
         font-size: 1.5rem;
         padding: 22px;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .chapters-list,
+    .topics-list {
+        width: 90%;
+    }
+
+    .chapter,
+    .topic {
+        font-size: 1.3rem;
+        padding: 12px;
     }
 }
