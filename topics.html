@@ -4,24 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topics - Digital Literacy Game</title>
+    
+    <!-- Unicons -->
+    <link href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" rel="stylesheet">
+
+    <!-- External CSS & JS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
     <!-- Navbar -->
     <nav>
         <div class="logo">
-            <h1>Digital Literacy Game</h1>
+            <h1>MitraYug</h1>
         </div>
-        <div class="setting">
-            <i class="uil uil-setting"></i> Settings
+
+        <div class="settings-container">
+            <div class="setting" id="settings-btn">
+                <i class="uil uil-setting"></i> Settings
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <button id="light-mode">🌞 Light Mode</button>
+                <button id="dark-mode">🌙 Dark Mode</button>
+            </div>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main>
-        <h2>Select a Topic</h2>
+        <h2>🔍 Select a Topic</h2>
 
         <!-- Search Bar -->
         <div class="search-bar">
@@ -29,36 +41,21 @@
             <i class="uil uil-search"></i>
         </div>
 
+        <!-- Topics List -->
         <div class="topics-list" id="topicsList">
-            <a href="#" class="topic">Basics of Computer</a>
-            <a href="#" class="topic">Using a Keyboard & Mouse</a>
-            <a href="#" class="topic">Internet & Email</a>
-            <a href="#" class="topic">Cyber Security & Safety</a>
-            <a href="#" class="topic">Digital Transactions</a>
-            <a href="#" class="topic">Government Digital Services</a>
+            <a href="#" class="topic">💻 Basics of Computer</a>
+            <a href="#" class="topic">⌨️ Using a Keyboard & Mouse</a>
+            <a href="#" class="topic">📧 Internet & Email</a>
+            <a href="#" class="topic">🔐 Cyber Security & Safety</a>
+            <a href="#" class="topic">💳 Digital Transactions</a>
+            <a href="#" class="topic">🏛️ Government Digital Services</a>
         </div>
 
         <!-- Back Button -->
         <div class="back-btn">
-            <a href="index.html">← Back to Home</a>
+            <a href="index.html">🔙 Back to Home</a>
         </div>
     </main>
-
-    <!-- JavaScript for Search -->
-    <script>
-        function searchTopics() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let topics = document.querySelectorAll('.topic');
-
-            topics.forEach(topic => {
-                if (topic.innerText.toLowerCase().includes(input)) {
-                    topic.style.display = "block";
-                } else {
-                    topic.style.display = "none";
-                }
-            });
-        }
-    </script>
 
 </body>
 </html>

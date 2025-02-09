@@ -32,6 +32,10 @@ nav {
 }
 
 /* Settings Button */
+.settings-container {
+    position: relative;
+}
+
 .setting {
     background-color: #FF8C42; /* Orange */
     padding: 10px 18px;
@@ -46,13 +50,49 @@ nav {
 
 /* Settings Icon */
 .setting i {
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
     color: white;
 }
 
 /* Hover Effect */
 .setting:hover {
     background-color: #E76F51;
+}
+
+/* =======================
+   Dropdown Menu Styles
+======================= */
+.dropdown-menu {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    width: 160px;
+}
+
+.dropdown-menu button {
+    background: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.dropdown-menu button:hover {
+    background: #FF8C42;
+    color: white;
+}
+
+.show {
+    display: flex;
 }
 
 /* =======================
@@ -169,7 +209,7 @@ main h2 {
     width: 100%;
     padding: 12px 15px;
     font-size: 1.2rem;
-    border: 2px solid #2E8B57; /* Green */
+    border: 2px solid #2E8B57;
     border-radius: 8px;
     outline: none;
     transition: 0.3s;
@@ -213,6 +253,82 @@ main h2 {
 .back-btn a:hover {
     background: #E76F51;
     transform: scale(1.05);
+}
+
+/* =======================
+   Dark Mode Styles (Updated Colors)
+======================= */
+.dark-mode {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+.dark-mode nav {
+    background-color: #1F1F1F;
+}
+
+.dark-mode .setting {
+    background-color: #FF6B6B;
+}
+
+.dark-mode .setting:hover {
+    background-color: #E05656;
+}
+
+.dark-mode main p {
+    background: #2A2A2A;
+    color: #F1F1F1;
+    border-left: 6px solid #FF6B6B;
+}
+
+.dark-mode .button {
+    background: #FF6B6B;
+    color: #E0E0E0;
+}
+
+.dark-mode .button:hover {
+    background: #E05656;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #2A2A2A;
+    border: 1px solid #444444;
+}
+
+.dark-mode .dropdown-menu button {
+    background: #3A3A3A;
+    color: #E0E0E0;
+}
+
+.dark-mode .dropdown-menu button:hover {
+    background: #4B4B4B;
+}
+
+.dark-mode .search-bar input {
+    background: #2A2A2A;
+    color: #E0E0E0;
+    border: 2px solid #FF6B6B;
+}
+.dark-mode main h2{
+    color: rgb(166, 233, 238);
+}
+.dark-mode .chapter,
+.dark-mode .topic {
+    background: #FF6B6B;
+    color: #f0f0f0;
+}
+
+.dark-mode .chapter:hover,
+.dark-mode .topic:hover {
+    background: #E05656;
+}
+
+.dark-mode .back-btn a {
+    background: #FF6B6B;
+}
+
+.dark-mode .back-btn a:hover {
+    background: #E05656;
 }
 
 /* =======================

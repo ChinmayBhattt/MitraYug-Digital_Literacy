@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Literacy Game</title>
-    
-    <!-- Unicons (Make sure to replace [your-style] with 'solid', 'regular', or 'line') -->
-    <link href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" rel="stylesheet">
-
-    <!-- Link to External CSS -->
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div class="logo">
-            <h1>Digital Literacy Game</h1>
+            <h1>MitraYug</h1>
         </div>
-
-        <div class="setting">
-            <span>Settings</span>
-            <i class="uil uil-setting"></i> <!-- Unicons Icon -->
+        <div class="settings-container">
+            <div class="setting" id="settings-btn">
+                <i class="uil uil-setting"></i> Settings
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <button id="light-mode">🌞 Light Mode</button>
+                <button id="dark-mode">🌙 Dark Mode</button>
+            </div>
         </div>
     </nav>
 
@@ -31,7 +32,6 @@
                 <a href="chapters.html" class="button">📖 Chapterwise</a>
                 <a href="topics.html" class="button">🔍 Topicwise</a>
             </div>
-            
         </div>
     </main>
 </body>
