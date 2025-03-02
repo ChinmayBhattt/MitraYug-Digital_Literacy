@@ -1,5 +1,7 @@
 ## Digital Literacy Learning Game
 
+The **Digital Literacy Learning Game** is an interactive web-based platform designed to teach essential digital skills. It covers fundamental topics such as computer basics, internet safety, and responsible digital behavior. The game includes features like light/dark mode, search functionality, and responsive UI for an enhanced user experience.
+
 ### Features
 - **Chapter-wise Learning**: Users can navigate through different digital literacy topics.
 - **Light/Dark Mode**: Toggle between light and dark mode for better accessibility.
