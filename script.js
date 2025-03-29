@@ -7,38 +7,43 @@ document.addEventListener("DOMContentLoaded", function () {
     const topicsList = document.getElementById("topicsList");
     const topics = topicsList ? topicsList.getElementsByClassName("topic") : [];
 
-    // Show/hide dropdown menu
-    if (settingsBtn) {
-        settingsBtn.addEventListener("click", function () {
-            dropdownMenu.classList.toggle("show");
-        });
-    }
+    // Toggle dropdown menu
+    settingsBtn.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('show');
+    });
 
-    // Apply stored theme on page load
-    function applyTheme() {
-        if (localStorage.getItem("theme") === "dark") {
-            document.body.classList.add("dark-mode");
-        } else {
-            document.body.classList.remove("dark-mode");
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!settingsBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.remove('show');
         }
-    }
-    applyTheme(); // Apply theme when page loads
+    });
 
-    // Light Mode
-    if (lightModeBtn) {
-        lightModeBtn.addEventListener("click", function () {
-            document.body.classList.remove("dark-mode");
-            localStorage.setItem("theme", "light");
-        });
-    }
+    // Theme handling
+    const setTheme = (theme) => {
+        if (theme === 'dark') {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    };
 
-    // Dark Mode
-    if (darkModeBtn) {
-        darkModeBtn.addEventListener("click", function () {
-            document.body.classList.add("dark-mode");
-            localStorage.setItem("theme", "dark");
-        });
-    }
+    // Theme button click handlers
+    lightModeBtn.addEventListener('click', () => {
+        setTheme('light');
+        dropdownMenu.classList.remove('show');
+    });
+
+    darkModeBtn.addEventListener('click', () => {
+        setTheme('dark');
+        dropdownMenu.classList.remove('show');
+    });
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
 
     // Search Functionality for Topics Page
     if (searchInput) {

@@ -3,59 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topics - Digital Literacy Game</title>
-    
-    <!-- Unicons -->
-    <link href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" rel="stylesheet">
-
-    <!-- External CSS & JS -->
+    <title>MitraYug - Topics</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Navbar -->
     <nav>
         <div class="logo">
             <h1>MitraYug</h1>
         </div>
-
         <div class="settings-container">
             <div class="setting" id="settings-btn">
                 <i class="uil uil-setting"></i> Settings
             </div>
             <div class="dropdown-menu" id="dropdown-menu">
-                <button id="light-mode">🌞 Light Mode</button>
-                <button id="dark-mode">🌙 Dark Mode</button>
+                <button id="light-mode"><i class="uil uil-sun"></i> Light Mode</button>
+                <button id="dark-mode"><i class="uil uil-moon"></i> Dark Mode</button>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main>
-        <h2>🔍 Select a Topic</h2>
-
-        <!-- Search Bar -->
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search for a topic..." onkeyup="searchTopics()">
-            <i class="uil uil-search"></i>
-        </div>
-
-        <!-- Topics List -->
-        <div class="topics-list" id="topicsList">
-            <a href="#" class="topic">💻 Basics of Computer</a>
-            <a href="#" class="topic">⌨️ Using a Keyboard & Mouse</a>
-            <a href="#" class="topic">📧 Internet & Email</a>
-            <a href="#" class="topic">🔐 Cyber Security & Safety</a>
-            <a href="#" class="topic">💳 Digital Transactions</a>
-            <a href="#" class="topic">🏛️ Government Digital Services</a>
-        </div>
-
-        <!-- Back Button -->
-        <div class="back-btn">
-            <a href="index.html">🔙 Back to Home</a>
+        <div class="content">
+            <h3>Explore Topics</h3>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for a topic..." id="search-input">
+                <i class="uil uil-search"></i>
+            </div>
+            <div class="topics-list">
+                <a href="#" class="topic">
+                    <i class="uil uil-mouse-alt"></i>
+                    Using Mouse and Keyboard
+                </a>
+                <a href="#" class="topic">
+                    <i class="uil uil-window"></i>
+                    Windows Navigation
+                </a>
+                <a href="#" class="topic">
+                    <i class="uil uil-browser"></i>
+                    Web Browsing
+                </a>
+                <a href="#" class="topic">
+                    <i class="uil uil-envelope-add"></i>
+                    Creating Email Account
+                </a>
+                <a href="#" class="topic">
+                    <i class="uil uil-lock"></i>
+                    Password Security
+                </a>
+                <a href="#" class="topic">
+                    <i class="uil uil-video"></i>
+                    Video Calls
+                </a>
+            </div>
+            <div class="back-btn">
+                <a href="index.html">
+                    <i class="uil uil-arrow-left"></i>
+                    Back to Home
+                </a>
+            </div>
         </div>
     </main>
-
 </body>
 </html>

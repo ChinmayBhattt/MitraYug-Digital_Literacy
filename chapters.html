@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapterwise Learning</title>
-    
-    <!-- Unicons -->
-    <link href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" rel="stylesheet">
-
-    <!-- External CSS -->
+    <title>MitraYug - Chapters</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div class="logo">
             <h1>MitraYug</h1>
         </div>
-
         <div class="settings-container">
             <div class="setting" id="settings-btn">
                 <i class="uil uil-setting"></i> Settings
             </div>
             <div class="dropdown-menu" id="dropdown-menu">
-                <button id="light-mode">🌞 Light Mode</button>
-                <button id="dark-mode">🌙 Dark Mode</button>
+                <button id="light-mode"><i class="uil uil-sun"></i> Light Mode</button>
+                <button id="dark-mode"><i class="uil uil-moon"></i> Dark Mode</button>
             </div>
         </div>
     </nav>
 
     <main>
-        <h2>📖 Chapterwise Learning</h2>
-        <p>Select a chapter to begin learning.</p>
-
-        <div class="chapters-list">
-            <a href="#" class="chapter">📘 Chapter 1: Basics of Computers</a>
-            <a href="#" class="chapter">🌐 Chapter 2: Internet & Email</a>
-            <a href="#" class="chapter">💳 Chapter 3: Online Transactions</a>
-            <a href="#" class="chapter">🔒 Chapter 4: Digital Safety & Security</a>
-            <a href="#" class="chapter">🏛️ Chapter 5: Government Digital Services</a>
-        </div>
-
-        <div class="back-btn">
-            <a href="index.html">🔙 Back to Home</a>
+        <div class="content">
+            <h3>Choose a Chapter</h3>
+            <div class="chapters-list">
+                <a href="#" class="chapter">
+                    <i class="uil uil-desktop"></i>
+                    Introduction to Computers
+                </a>
+                <a href="#" class="chapter">
+                    <i class="uil uil-mouse"></i>
+                    Basic Computer Operations
+                </a>
+                <a href="#" class="chapter">
+                    <i class="uil uil-globe"></i>
+                    Internet Basics
+                </a>
+                <a href="#" class="chapter">
+                    <i class="uil uil-envelope"></i>
+                    Email Communication
+                </a>
+                <a href="#" class="chapter">
+                    <i class="uil uil-shield-check"></i>
+                    Online Safety
+                </a>
+            </div>
+            <div class="back-btn">
+                <a href="index.html">
+                    <i class="uil uil-arrow-left"></i>
+                    Back to Home
+                </a>
+            </div>
         </div>
     </main>
 </body>
