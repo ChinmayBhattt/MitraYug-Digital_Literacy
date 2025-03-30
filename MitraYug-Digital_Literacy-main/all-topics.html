@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Topics - MitraYug</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="mitrayug.jpg" alt="MitraYug Logo" class="logo-img">
+                <h1>MitraYug</h1>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" data-translate="home">Home</a>
+            <a href="all-topics.html" data-translate="allTopics">All Topics</a>
+            <a href="about.html" data-translate="aboutUs">About Us</a>
+            <a href="help.html" data-translate="help">Help</a>
+        </div>
+        <div class="accessibility-controls">
+            <button id="contrastToggle" aria-label="Toggle high contrast mode" class="tooltip-trigger" data-tooltip="Toggle high contrast mode">
+                <i class="fas fa-adjust"></i>
+            </button>
+            <button id="fontSizeToggle" aria-label="Toggle large text" class="tooltip-trigger" data-tooltip="Toggle large text">
+                <i class="fas fa-text-height"></i>
+            </button>
+            <button id="voiceToggle" aria-label="Toggle voice assistance" class="tooltip-trigger" data-tooltip="Toggle voice assistance">
+                <i class="fas fa-volume-up"></i>
+            </button>
+            <button id="languageToggle" aria-label="Toggle language" class="tooltip-trigger" data-tooltip="Toggle language">
+                <i class="fas fa-globe"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- All Topics Content -->
+    <main class="all-topics">
+        <div class="topics-header">
+            <h1 class="section-header" data-translate="allTopicsTitle">All Learning Topics</h1>
+            <p class="section-description" data-translate="allTopicsDesc">Browse through all our digital literacy topics. Use the search bar to find specific topics.</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="topicSearch" placeholder="Search topics..." data-translate="searchPlaceholder">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+
+        <!-- Topics Grid -->
+        <div class="topics-grid">
+            <!-- Basic Phone Operations -->
+            <div class="topic-category">
+                <h2><i class="fas fa-mobile-alt"></i> <span data-translate="basicPhone">Basic Phone Operations</span></h2>
+                <div class="topics-container">
+                    <a href="topics/calling.html" class="topic-card">
+                        <i class="fas fa-phone"></i>
+                        <h3 data-translate="makeCall">How to Make a Call</h3>
+                    </a>
+                    <a href="topics/receive-call.html" class="topic-card">
+                        <i class="fas fa-phone-volume"></i>
+                        <h3 data-translate="receiveCall">How to Pick Up a Call</h3>
+                    </a>
+                    <a href="topics/contacts.html" class="topic-card">
+                        <i class="fas fa-address-book"></i>
+                        <h3 data-translate="saveContacts">How to Save Contacts</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Messaging and Communication -->
+            <div class="topic-category">
+                <h2><i class="fas fa-comments"></i> <span data-translate="messaging">Messaging and Communication</span></h2>
+                <div class="topics-container">
+                    <a href="topics/whatsapp-text.html" class="topic-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3 data-translate="whatsappText">How to Text on WhatsApp</h3>
+                    </a>
+                    <a href="topics/whatsapp-calls.html" class="topic-card">
+                        <i class="fas fa-video"></i>
+                        <h3 data-translate="whatsappCalls">WhatsApp Calls & Video Calls</h3>
+                    </a>
+                    <a href="topics/email.html" class="topic-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3 data-translate="email">How to Use Email</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Apps and Device Management -->
+            <div class="topic-category">
+                <h2><i class="fas fa-cogs"></i> <span data-translate="apps">Apps and Device Management</span></h2>
+                <div class="topics-container">
+                    <a href="topics/install-app.html" class="topic-card">
+                        <i class="fas fa-download"></i>
+                        <h3 data-translate="installApp">How to Install an App</h3>
+                    </a>
+                    <a href="topics/uninstall-app.html" class="topic-card">
+                        <i class="fas fa-trash-alt"></i>
+                        <h3 data-translate="uninstallApp">How to Uninstall an App</h3>
+                    </a>
+                    <a href="topics/device-buttons.html" class="topic-card">
+                        <i class="fas fa-mobile-button"></i>
+                        <h3 data-translate="deviceButtons">Device Buttons Guide</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Media and Entertainment -->
+            <div class="topic-category">
+                <h2><i class="fas fa-photo-video"></i> <span data-translate="media">Media and Entertainment</span></h2>
+                <div class="topics-container">
+                    <a href="topics/photos.html" class="topic-card">
+                        <i class="fas fa-camera"></i>
+                        <h3 data-translate="photos">Photos & Gallery</h3>
+                    </a>
+                    <a href="topics/youtube.html" class="topic-card">
+                        <i class="fab fa-youtube"></i>
+                        <h3 data-translate="youtube">How to Use YouTube</h3>
+                    </a>
+                    <a href="topics/news.html" class="topic-card">
+                        <i class="fas fa-newspaper"></i>
+                        <h3 data-translate="news">Getting News Online</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navigation and Search -->
+            <div class="topic-category">
+                <h2><i class="fas fa-compass"></i> <span data-translate="navigation">Navigation and Search</span></h2>
+                <div class="topics-container">
+                    <a href="topics/maps.html" class="topic-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3 data-translate="maps">Using Google Maps</h3>
+                    </a>
+                    <a href="topics/google-search.html" class="topic-card">
+                        <i class="fas fa-search"></i>
+                        <h3 data-translate="googleSearch">Google Search</h3>
+                    </a>
+                    <a href="topics/assistant.html" class="topic-card">
+                        <i class="fas fa-microphone"></i>
+                        <h3 data-translate="assistant">Google Assistant</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Time Management -->
+            <div class="topic-category">
+                <h2><i class="fas fa-clock"></i> <span data-translate="time">Time Management</span></h2>
+                <div class="topics-container">
+                    <a href="topics/alarm.html" class="topic-card">
+                        <i class="fas fa-clock"></i>
+                        <h3 data-translate="alarm">Setting Alarms</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Connectivity -->
+            <div class="topic-category">
+                <h2><i class="fas fa-network-wired"></i> <span data-translate="connectivity">Connectivity</span></h2>
+                <div class="topics-container">
+                    <a href="topics/wifi.html" class="topic-card">
+                        <i class="fas fa-wifi"></i>
+                        <h3 data-translate="wifi">WiFi & Hotspot</h3>
+                    </a>
+                    <a href="topics/keyboard.html" class="topic-card">
+                        <i class="fas fa-keyboard"></i>
+                        <h3 data-translate="keyboard">Keyboard Language</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Digital Services -->
+            <div class="topic-category">
+                <h2><i class="fas fa-hand-holding-usd"></i> <span data-translate="services">Digital Services</span></h2>
+                <div class="topics-container">
+                    <a href="topics/payments.html" class="topic-card">
+                        <i class="fas fa-credit-card"></i>
+                        <h3 data-translate="payments">Online Payments</h3>
+                    </a>
+                    <a href="topics/rides.html" class="topic-card">
+                        <i class="fas fa-car"></i>
+                        <h3 data-translate="rides">Booking Rides</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Security -->
+            <div class="topic-category">
+                <h2><i class="fas fa-shield-alt"></i> <span data-translate="security">Security</span></h2>
+                <div class="topics-container">
+                    <a href="topics/cybersecurity.html" class="topic-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3 data-translate="cybersecurity">Cybersecurity</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 data-translate="aboutUs">About Us</h4>
+                <p data-translate="aboutText">MitraYug is dedicated to making technology accessible to everyone.</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="quickLinks">Quick Links</h4>
+                <a href="all-topics.html" data-translate="allTopics">All Topics</a>
+                <a href="about.html" data-translate="aboutUs">About Us</a>
+                <a href="help.html" data-translate="help">Help</a>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="contact">Contact</h4>
+                <p data-translate="email">Email: support@mitrayug.com</p>
+                <p data-translate="phone">Phone: +91 1234567890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="copyright">&copy; 2025 MitraYug. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/languages.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/all-topics.js"></script>
+</body>
+</html> 
