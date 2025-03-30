@@ -1678,11 +1678,4 @@ html {
         opacity: 1;
         transform: scale(1);
     }
-}
-
-.section-description {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 2rem auto;
-    padding: 0 1rem;
 } 
